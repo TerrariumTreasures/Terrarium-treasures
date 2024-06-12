@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Terrarium Treasures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a3328;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #205b4e;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #205b4e;
+        }
+
+        .pet-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .pet-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .pet-card img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .pet-card h2 {
+            color: #205b4e;
+            margin-bottom: 10px;
+        }
+
+        .pet-card p {
+            margin: 5px 0;
+        }
+
+        .pet-card button {
+            background-color: #205b4e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .pet-card button:hover {
+            background-color: #1a3328;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Adopt a Pet</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="custom_design.html">Custom Design</a>
+        <a href="tanks.html">Tanks</a>
+    </nav>
+    <div class="container">
+        <div class="grid">
+            <div class="pet-card">
+                <img src="chameleon.jpg" alt="Chameleon">
+                <h2>Chameleon</h2>
+                <p><i>Chamaeleonidae</i></p>
+                <p>Price: $150</p>
+                <button onclick="location.href='purchase.html?pet=chameleon'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="gecko.jpg" alt="Gecko">
+                <h2>Gecko</h2>
+                <p><i>Gekkonidae</i></p>
+                <p>Price: $100</p>
+                <button onclick="location.href='purchase.html?pet=gecko'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="bearded_dragon.jpg" alt="Bearded Dragon">
+                <h2>Bearded Dragon</h2>
+                <p><i>Pogona</i></p>
+                <p>Price: $120</p>
+                <button onclick="location.href='purchase.html?pet=bearded_dragon'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="ball_python.jpg" alt="Ball Python">
+                <h2>Ball Python</h2>
+                <p><i>Python regius</i></p>
+                <p>Price: $200</p>
+                <button onclick="location.href='purchase.html?pet=ball_python'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="frog.jpg" alt="Frog">
+                <h2>Frog</h2>
+                <p><i>Amphibia</i></p>
+                <p>Price: $50</p>
+                <button onclick="location.href='purchase.html?pet=frog'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="leopard_gecko.jpg" alt="Leopard Gecko">
+                <h2>Leopard Gecko</h2>
+                <p><i>Eublepharis macularius</i></p>
+                <p>Price: $80</p>
+                <button onclick="location.href='purchase.html?pet=leopard_gecko'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="crested_gecko.jpg" alt="Crested Gecko">
+                <h2>Crested Gecko</h2>
+                <p><i>Correlophus ciliatus</i></p>
+                <p>Price: $90</p>
+                <button onclick="location.href='purchase.html?pet=crested_gecko'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="red_eared_slider.jpg" alt="Red-Eared Slider Turtle">
+                <h2>Red-Eared Slider Turtle</h2>
+                <p><i>Trachemys scripta elegans</i></p>
+                <p>Price: $60</p>
+                <button onclick="location.href='purchase.html?pet=red_eared_slider_turtle'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="axolotl.jpg" alt="Axolotl">
+                <h2>Axolotl</h2>
+                <p><i>Ambystoma mexicanum</i></p>
+                <p>Price: $70</p>
+                <button onclick="location.href='purchase.html?pet=axolotl'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="hermit_crab.jpg" alt="Hermit Crab">
+                <h2>Hermit Crab</h2>
+                <p><i>Paguroidea</i></p>
+                <p>Price: $30</p>
+                <button onclick="location.href='purchase.html?pet=hermit_crab'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="green_anole.jpg" alt="Green Anole">
+                <h2>Green Anole</h2>
+                <p><i>Anolis carolinensis</i></p>
+                <p>Price: $25</p>
+                <button onclick="location.href='purchase.html?pet=green_anole'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="fire_skink.jpg" alt="Fire Skink">
+                <h2>Fire Skink</h2>
+                <p><i>Mochlus fernandi</i></p>
+                <p>Price: $40</p>
+                <button onclick="location.href='purchase.html?pet=fire_skink'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="uromastyx.jpg" alt="Uromastyx Lizard">
+                <h2>Uromastyx Lizard</h2>
+                <p><i>Uromastyx</i></p>
+                <p>Price: $110</p>
+                <button onclick="location.href='purchase.html?pet=uromastyx_lizard'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="african_fat_tailed_gecko.jpg" alt="African Fat-Tailed Gecko">
+                <h2>African Fat-Tailed Gecko</h2>
+                <p><i>Hemitheconyx caudicinctus</i></p>
+                <p>Price: $85</p>
+                <button onclick="location.href='purchase.html?pet=african_fat_tailed_gecko'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="blue_tongued_skink.jpg" alt="Blue-Tongued Skink">
+                <h2>Blue-Tongued Skink</h2>
+                <p><i>Tiliqua scincoides</i></p>
+                <p>Price: $120</p>
+                <button onclick="location.href='purchase.html?pet=blue_tongued_skink'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="kenyan_sand_boa.jpg" alt="Kenyan Sand Boa">
+                <h2>Kenyan Sand Boa</h2>
+                <p><i>Gongylophis colubrinus</i></p>
+                <p>Price: $70</p>
+                <button onclick="location.href='purchase.html?pet=kenyan_sand_boa'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="red_tail_boa.jpg" alt="Red Tail Boa">
+                <h2>Red Tail Boa</h2>
+                <p><i>Boa constrictor</i></p>
+                <p>Price: $250</p>
+                <button onclick="location.href='purchase.html?pet=red_tail_boa'">Buy</button>
+            </div>
+            <div class="pet-card">
+                <img src="green_tree_python.jpg" alt="Green Tree Python">
+                <h2>Green Tree Python</h2>
+                <p><i>Morelia viridis</i></p>
+                <p>Price: $300</p>
+                <button onclick="location.href='purchase.html?pet=green_tree_python'">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

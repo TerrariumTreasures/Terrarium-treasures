@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrarium Treasures</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #1a3328;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #205b4e;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    color: #f5f5f5;
+}
+
+.bg-image {
+    background-image: url('frogTank.png');
+    background-size: cover;
+    background-position: center; /* Center the image vertically and position it at the top horizontally */
+    position: relative;
+    height: 90vh; /* Full height of viewport */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 130px;
+    left: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a3328;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.stock-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.stock-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.stock-item img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stock-item p {
+    margin-left: 20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.stock-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.stock-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Terrarium Treasures</h1>
+    </header>
+    <nav>
+        <a href="custom_design.html" class="button">Custom Design</a>
+        <a href="tanks.html" class="button">Tanks</a>
+        <a href="adopt.html" class="button">Adopt a Pet</a>
+    </nav>
+    <div class="bg-image">
+        <div class="overlay">
+            <h1>Welcome to Terrarium Treasures</h1>
+            <p>Your destination for unique tank designs and exotic pets</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We want to provide our customers with amazing and beautifully designed terrariums for their exotic pets, as well as help them adopt a pet!</p>
+    </div>
+    <div class="container">
+        <h2>Heres a look at some of our options!</h2>
+        <div class="stock-images">
+            <div class="stock-item">
+                <img src="tank.webp" alt="Tank">
+                <p>A forest designed tank for your new chameleon</p>
+            </div>
+            <div class="stock-item">
+                <img src="chameleon.png" alt="Chameleon">
+                <p style="font-size:20px; font-weight: 100; font-style: italic; margin-top:150px; margin-left:-700px">Furcifer pardalis</p>
+
+                <p>A Furcifer Chameleon</p>
+            </div>
+            <div class="stock-item">
+                <img src="gecko.jpeg" alt="Gecko">
+                <p style="font-size:20px; font-weight: 100; font-style: italic; margin-top:150px; margin-right:-580px">Eublepharis macularius</p>
+
+                <p>A Spotted Gecko</p>
+            </div>
+            <div class="stock-item">
+                <img src="beardedDragon.png" alt="Bearded Dragon">
+                <p style="font-size:20px; font-weight: 100; font-style: italic; margin-top:150px; margin-left:-700px">Pogona vitticeps</p>
+                <p>A Bearded Dragon</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Terrarium Treasures. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

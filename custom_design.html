@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Design - Terrarium Treasures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a3328;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #205b4e;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #205b4e;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        button {
+            background-color: #205b4e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1a3328;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #205b4e;
+        }
+
+        .addons label {
+            display: inline-block;
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        .addons input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .addons input[type="text"] {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Custom Design</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tanks.html">Tanks</a>
+        <a href="adopt.html">Adopt a Pet</a>
+    </nav>
+    <div class="container">
+        <h2>Choose Your Customization Options</h2>
+        <fieldset>
+            <legend>Tanks</legend>
+            <label>
+                <input type="radio" name="tank" value="10 Gallon Tank">
+                10 Gallon Tank (+$30)
+            </label>
+            <label>
+                <input type="radio" name="tank" value="10 Gallon Tank">
+                20 Gallon Tank (+$45)
+            </label>
+            <label>
+                <input type="radio" name="tank" value="10 Gallon Tank">
+                40 Gallon Tank (+$80)
+            </label>
+            <label>
+                <input type="radio" name="tank" value="10 Gallon Tank">
+                60 Gallon Tank (+$115)
+            </label>
+            <label>
+                <input type="radio" name="tank" value="10 Gallon Tank">
+                75 Gallon Tank (+$155)
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Themes(Check multiple boxes to add more themes)</legend>
+            <label>
+                <input type="checkbox" name="theme" value="forest">
+                Forest Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="desert">
+                Desert Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="beach">
+                Beach Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="space">
+                Space Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="jungle">
+                Jungle Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="mountain">
+                Mountain Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="underwater">
+                Underwater Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="rainforest">
+                Rainforest Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="savannah">
+                Savannah Theme (+$50)
+            </label>
+            <label>
+                <input type="checkbox" name="theme" value="otherTheme">
+                Other Theme (+$75)
+                <input type="text" name="otherTheme" placeholder="Enter your custom theme">
+            </label>
+        </fieldset>
+
+        <fieldset class="addons">
+            <legend>Tank Addons <button id="qualityButton" onclick="toggleQuality()">Show High Quality Items</button>
+</legend>
+            <label>
+                <input type="checkbox" name="addon" value="light">
+                LED Light (+$40)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="mister">
+                Mister (+$40)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="heater">
+                Heater (+$25)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="background">
+                Background Image (+$20)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="plants">
+                Natural Plants (+$30)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="waterfall">
+                Waterfall Feature (+$30)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="fogger">
+                Fogger (+$40)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="thermometer">
+                Thermometer (+$10)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="humidity">
+                Humidity Checker (+$10)
+            </label>
+            <label>
+                <input type="checkbox" name="addon" value="otherAddon">
+                Other Addon (+$TBD)
+            </label>
+                <input type="text" name="otherAddon" placeholder="Enter your custom addon">
+        </fieldset>
+
+        <fieldset>
+            <legend>Custom Request</legend>
+            <label>
+                <input type="checkbox" name="other" id="otherCheckbox">
+                Other (+$TBD)
+                <input type="text" name="customRequest" id="customRequest" placeholder="Enter your custom request">
+            </label>
+        </fieldset>
+
+        <button onclick="submitForm()">Submit</button>
+    </div>
+    <script>
+        function submitForm(){
+                location.replace("purchase.html");
+            }
+    let originalPrices = {
+        "light": 40,
+        "mister": 40,
+        "heater": 25,
+        "background": 20,
+        "plants": 30,
+        "waterfall": 30,
+        "fogger": 40,
+        "thermometer": 10,
+        "humidity": 10
+    };
+
+    let highQualityPrices = {
+        "light": 70,
+        "mister": 100,
+        "heater": 40,
+        "background": 30,
+        "plants": 50,
+        "waterfall": 70,
+        "fogger": 100,
+        "thermometer": 30,
+        "humidity": 30
+    };
+
+    let isHighQuality = false;
+
+    function toggleQuality() {
+        isHighQuality = !isHighQuality;
+        let prices = document.querySelectorAll('.addons input[type="checkbox"]');
+        prices.forEach(price => {
+            let addon = price.getAttribute('value');
+            let label = price.parentNode;
+            if (addon in originalPrices) {
+                let newPrice = isHighQuality ? highQualityPrices[addon] : originalPrices[addon];
+                label.innerHTML = label.innerHTML.replace(/\(\+\$\d+\)/, `(+\$${newPrice})`);
+            }
+        });
+    }
+    </script>
+</body>
+
+</html>
